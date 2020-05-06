@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang=pt dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ST2 Digital – Negócios e Tecnologia</title>
+    <style media="screen">
+
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+    body{
+      font-family: Helvetica,sans-serif;
+      background-color: #F8F7F5;
+      color: #222;
+      font-size: 22px;
+    }
+
+    .logo{
+  font-size:44px;
+  padding-top: 1em;
+}
+.linha{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+ }
+
+.square{
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: .1em;
+  background-color: #FAC434;
+}
+
+@-webkit-keyframes grow {
+ 0% {
+-webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
+  }
+
+  50% {
+  -webkit-transform: scale( 0.1 );-moz-transform: scale( 0.1 );-o-transform: scale( 0.1 );-ms-transform: scale( 0.1 );transform: scale( 0.1 );
+  }
+
+  100% {
+  -webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
+  }
+}
+
+    .container{
+      max-width: 900px;
+      text-align: center;
+      margin: 0 auto;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .chamada{
+      font-family: monospace;
+      font-size: 1.3em;
+      color: #F14A4E;
+      padding: 2em 0;
+    }
+
+    .lista{
+      text-align: left;
+      line-height: 1.6em;
+      padding-bottom: 2em;
+    }
+
+    .quote{
+      text-align: right;
+      padding-bottom: 2em;
+    }
+
+    .spikes{
+display: flex;
+flex-direction: row ;
+
+}
+
+.left{
+width:calc(50vw + 5vw);
+height:15em;
+background: #D6D6D6;
+color: #F14A4E;
+
+}
+ .spi{
+background-image: linear-gradient(225deg, #F14A4E 25%, transparent 25%), linear-gradient(315deg, #F14A4E 25%, transparent 25%);
+background-repeat: repeat-y;
+background-size: 6vw 6vw;
+height: inherit;
+margin-left:-6vw;
+}
+
+.right{
+width:50vw;
+height:15em;
+background: #F14A4E;
+color: #D6D6D6;
+}
+
+.text{
+margin-left:25%;
+ padding-top: 2em;
+font-size: 7.4vw;
+}
+
+.button {
+  border: solid 6.5px;
+  border-color: #F14A4E;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  color:#F14A4E;
+  width: 15em;
+  max-width: 70%;
+  height: 4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px 8px 4px;
+  cursor: pointer;
+  border-radius: 55px;
+}
+
+.button:hover{
+  transition-timing-function: ease;
+  transition: 0.5s;
+  background-color: #F14A4E ;
+  color:white;
+}
+
+.mail{
+  padding-bottom: 2em;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="logo">
+        <div class="linha">
+          <div>ST2</div><div class="square"></div><div>Digital</div>
+        </div>
+      </div>
+
+      <h4>Estamos na intersecção entre:</h4>
+    </div>
+
+    <div class="spikes">
+      <div class="left">
+        <div class="text">
+          Negócios
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="spi">
+          <div class="text">
+            Tecnologia
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="chamada">
+        <div class="mySlides " style="display: none;">
+          <p>Tecnologia não alinhada aos objetivos empresariais é desperdício de esforços e recursos.</p>
+        </div>
+        <div class="mySlides " style="display: none;">
+          <p>Empresas sem tecnologias atuais são menos competitivas e lucrativas que os concorrentes.</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <h3>"O futuro já está aqui, só não está igualmente distribuído."</h3>
+        <p> – William Gibson</p>
+      </div>
+
+      <div class="lista">
+        Checklist rápido para um negócio em 2020:
+        <ul>
+          <li>Funciona perfeitamente em celulares (Mobile First)</li>
+          <li>Rápido e fácil de acessar</li>
+          <li>Conectado e presente onde seu clinte está</li>
+          <li>Traz a informação que seu clinte quer e precisa, nada mais</li>
+        </ul>
+      </div>
+
+      <div class="mail">
+        <a href="mailto:gus@st2digital.com?subject=Contato%20site">
+           <button class="button emailbtn" type="button" name="Contato"> <!--<img src="files/email2.svg" alt="email" style="height:.7em;"> -->Entre em contato</button>
+        </a>
+      </div>
+
+    </div>
+
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html>
